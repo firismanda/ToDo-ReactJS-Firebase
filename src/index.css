@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.author {
+    margin-top: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    margin-bottom: 20px;
+}
+
+.btn-fake:hover,
+.btn-fake:active:focus,
+.btn-fake:focus {
+    background-color: #fff;
+    border-color: #ccc;
+    cursor: default;
+}
+
+.done {
+    color: limegreen;
+    text-decoration: line-through;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    vertical-align: middle;
+}
+
+.list-group-item:hover {
+    background-color: #f5f5f5;
+}
+
+.todo {
+    display: inline-block;
+    max-width: 80%;
+    padding-top: 6px;
+}
+
+.toggle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type="checkbox"].styled:checked+label:after,
+input[type="radio"].styled:checked+label:after,
+.abc-checkbox input[type=checkbox]:checked+label:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e013";
+}
+
+input[type="checkbox"].styled:checked label:after,
+input[type="radio"].styled:checked label:after,
+.abc-checkbox label:after {
+    padding-left: 4px;
+    padding-top: 2px;
+    font-size: 9px;
+}
+
+.abc-checkbox {
+    padding-top: 4px;
+}
+
+.abc-checkbox label::after {
+    left: -1px;
+    top: 3px;
+    color: green;
+}
+
+.list-anim-enter {
+    transform: scaleY(0);
+}
+
+.list-anim-enter.list-anim-enter-active {
+    transform: scaleY(1);
+    transition: all 150ms ease-in;
+}
+
+.list-anim-leave {
+    transform: scaleY(1);
+}
+
+.list-anim-leave.list-anim-leave-active {
+    transform: scaleY(0);
+    transition: all 250ms ease-in;
+}
